@@ -51,24 +51,18 @@ function! SetArrowKeysAsTextShifters()
     nmap <silent> <Right> >>
     nnoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>
     nnoremap <silent> <Down>  <Esc>:call AddEmptyLineAbove()<CR>
-    nnoremap <silent> <C-Up> <Esc>:call DelEmptyLineBelow()<CR>
-    nnoremap <silent> <C-Down> <Esc>:call AddEmptyLineBelow()<CR>
 
     " Visual mode
     vmap <silent> <Left> <
     vmap <silent> <Right> >
     vnoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>gv
     vnoremap <silent> <Down>  <Esc>:call AddEmptyLineAbove()<CR>gv
-    vnoremap <silent> <C-Up> <Esc>:call DelEmptyLineBelow()<CR>gv
-    vnoremap <silent> <C-Down> <Esc>:call AddEmptyLineBelow()<CR>gv
 
     " Insert mode
     imap <silent> <Left> <C-D>
     imap <silent> <Right> <C-T>
     inoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>a
     inoremap <silent> <Down> <Esc>:call AddEmptyLineAbove()<CR>a
-    inoremap <silent> <C-Up> <Esc>:call DelEmptyLineBelow()<CR>a
-    inoremap <silent> <C-Down> <Esc>:call AddEmptyLineBelow()<CR>a
 
     " Disable modified versions we are not using
     nnoremap  <S-Up>     <NOP>
