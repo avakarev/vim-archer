@@ -47,8 +47,8 @@ endfunction
 function! SetArrowKeysAsTextShifters()
 
     " Normal mode
-    nmap <silent> <Left> <<
-    nmap <silent> <Right> >>
+    nmap <silent> <Left> <
+    nmap <silent> <Right> >
     nnoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>
     nnoremap <silent> <Down>  <Esc>:call AddEmptyLineAbove()<CR>
 
